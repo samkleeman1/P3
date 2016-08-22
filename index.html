@@ -20,14 +20,16 @@
   border: 1px solid #DDD;
 }
 
+
+
 .im-centered { margin: auto; max-width: 600px;}
 
 
 </style>
-  <body>
+  <body data-spy="scroll" data-target="#navbarx">
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="navbarx">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -43,7 +45,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">What we do?</a></li>
+        <li class="active"><a href="#what">What we do?</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -70,8 +72,10 @@
   <p>Personalisation. Prevention. Precision.</p>
   <p><a class="btn btn-primary btn-lg">Learn more</a></p>
 </div>
-<div class="row-padded text-center">
+<div class="row-padded text-center" id="what">
   <h2>What we do?</h1>
+  <br>
+  <div class="row text-center">
   <div class="col-md-4">
       <strong>Personalisation</strong>
       <p>An evolving Program of Interventions tailored to you</p>
@@ -85,16 +89,10 @@
       <p>Targeted therapy, tracked over time, at the right dose</p>
   </div>
 </div>
-<div class="row-padded text-center">
-  <h1>London P3 Clinic</h1>
-  <p>Personalisation. Prevention. Precision.</p>
-  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
 </div>
-<div class="row-padded text-center">
-  <h1>London P3 Clinic</h1>
-  <p>Personalisation. Prevention. Precision.</p>
-  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
-</div>
+<div class="row-padded text-center" id="what">
+  <h2>Products</h1>
+
 </div>
 
   </body>
