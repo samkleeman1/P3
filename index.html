@@ -25,29 +25,60 @@
     background-image: url("img/brickwall.png");
 }
 
-.bubble 
+.just {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bubblel 
 {
 position: relative;
 
 padding: 10px;
-background: #ef9a9a;
+background: #34AADC;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
 }
 
-.bubble:after 
+.bubblel:after 
 {
 content: '';
 position: absolute;
 border-style: solid;
 border-width: 15px 15px 15px 0;
-border-color: transparent #ef9a9a;
+border-color: transparent #34AADC;
 display: block;
 width: 0;
 z-index: 1;
 margin-top: -15px;
 left: -15px;
+top: 50%;
+}
+
+.bubbler 
+{
+position: relative;
+
+padding: 10px;
+background: #34AADC;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.bubbler:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent #34AADC;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -15px;
+right: -15px;
 top: 50%;
 }
 
@@ -57,15 +88,17 @@ top: 50%;
   <nav class="blue-grey darken-3" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="responsive-img valign" id="logo" src="img/logowhite.png" width="200"/></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#principles">What do we do?</a></li>
-        <li><a href="#">Approach</a></li>
-        <li><a href="#">Who are we?</a></li>
+        <li><a href="#why">Why?</a></li>
+        <li><a href="#principles">What?</a></li>
+        <li><a href="#how">How?</a></li>
+        <li><a href="#">Who?</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#principles">What do we do?</a></li>
-        <li><a href="#">Approach</a></li>
-        <li><a href="#">Who are we?</a></li>
+        <li><a href="#why">Why?</a></li>
+        <li><a href="#principles">What?</a></li>
+        <li><a href="#how">How?</a></li>
+        <li><a href="#who">Who?</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -91,14 +124,26 @@ top: 50%;
 
 <div class="divider"></div>
 
+  <div class="container" id="why" class="section scrollspy">
+    <div class="section">
+      <div class="row">
+          <div class="col s4">
+          <h4 class="center bubblel white-text">Why?</h3>
+          </div>
+          <div class="col s12">
+        <p class="flow-text just">The most common diseases of age are cancer, dementia, stroke, heart attack, osteoarthritis, wrinkles. A similar set of biological changes cause all age-related diseases. By combining different strands of geroscience, London P3 can precisely target these to improve your health now and in the future.</p>
+          </div></div> </div></div>
 
-  <div class="container" id="principles">
+          <div class="divider"></div>
+
+
+  <div class="container" id="principles" class="section scrollspy">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
           <div class="col s4 offset-s8">
-          <h4 class="center bubble white-text">What is P3?</h3>
+          <h4 class="center bubbler white-text">What is P3?</h3>
           </div>
         <div class="col s12 m4">
           <div class="icon-block">
@@ -151,45 +196,52 @@ top: 50%;
         </div>
       </div>
 
-    </div>
+    </div></div>
 
+    <div class="divider"></div>
 
+  <div class="container" id="how" class="section scrollspy">
     <div class="section">
-    </div>
-  </div>
-
-  <footer class="page-footer blue-grey darken-3">
-    <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <div class="col s5">
+          <h4 class="center bubblel white-text">How does it work?</h3>
+          </div></div></div> </div>
+
+          <div class="divider"></div>
+
+  <div class="container" id="who" class="section scrollspy">
+    <div class="section">
+      <div class="row">
+          <div class="col s4 offset-s8">
+          <h4 class="center bubbler white-text">Who are we?</h3>
+          </div></div></div> </div>
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
- 
-  </footer>
-
+        <footer class="page-footer blue-grey darken-3">
+          <div class="container ">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -213,6 +265,10 @@ top: 50%;
 
       ];
       Materialize.scrollFire(options);
+        $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+        
     </script>
   </body>
 </html>
